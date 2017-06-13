@@ -1,0 +1,2403 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************ TABLE OF CONTENTS ***************
+1. Fonts
+2. General css
+3. Header css
+4. Header Nav css
+5. Main slider css
+6. Help css
+7. Divider css
+8. Campaign css
+9. Campaign Single css
+10. Counter css
+11. Event css
+12. Events Single css
+13. Testimonial css
+14. Volunteers css
+15. Volunteers two css
+16. Gallery css
+17. Blog css
+18. Blog-Single css
+19. Inner-page-heading css
+20. About css
+21. Mission css
+22. Sponsor css
+21. Profile css
+22. Donator form css
+23. Faq css
+24. Contact css
+25. Footer css
+**********************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i');
+@import "font-awesome.min.css";
+@import "font-awesome-animation.min.css";
+@import "jquery-ui.css";
+@import "animations.css";
+@import "owl.css";
+@import "isotop.css";
+@import "meanmenu.css";
+@import "meanmenu-default.css";
+@import "fancyBox.css";
+@import "icofont.css";
+@import "flaticon.css";
+@import "material-design-iconic-font.css";
+/* ========== Table of contents ========== */
+
+
+/* ========== General css start========== */
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    color: #595959;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+p {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a { 
+    color: #808080;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #595959;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    outline: none !important;
+}
+a img {
+    border: none;
+}
+iframe {
+    border: none;
+}
+/* ========== HEADINGS FON-TSIZE ========== */
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #484848;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+/* ========== TITLE LINE ========== */
+.irs-section-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.irs-section-title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.irs-section-title .irs-title-line {
+    width: 150px;
+    height: 1px;
+    background: #C1C1C1;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+.irs-section-title .irs-title-line .irs-title-icon {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    margin-left: -12px;
+    width: 32px;
+    background: #ffffff;
+}
+.irs-section-title .irs-title-line .irs-title-icon img {
+    width: 24px;
+    height: 24px;
+}
+.irs-section-title p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    color: #595959;
+}
+
+
+/* ========== layer START ========== */
+.irs-layer-black {
+    position: relative;
+}
+.irs-layer-black:before {
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* ========== My button css start ========== */ 
+
+.irs-btn-transparent {
+    padding: 4px 22px;
+    background: none;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-btn-transparent:hover {
+    background: none;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-btn-transparent-two {
+    color: #6c6c6c;
+    font-weight: bold;
+    background: transparent;
+    padding: 15px 30px;
+    border: 1px solid #C1C1C1;
+    text-transform: uppercase;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+}
+.irs-btn-transparent-two:hover {
+    color: #ffffff;
+    background: #F13F4B;
+    border-color: #F13F4B;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-btn-transparent-three {
+    padding: 4px 26px;
+    background: none;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-btn-transparent-three:hover {
+    color: #ffffff;
+    background: #F13F4B;
+    border: 1px solid #F13F4B;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-big-btn {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #F13F4B;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    box-shadow: none;
+    border: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-big-btn:hover {
+    color: #ffffff;
+    background: #535353;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ========== Scroll To Top ========== */
+#scrollUp {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 10px;
+    background-color: #F13F4B;
+}
+#scrollUp:before {
+    content: "\f01b";
+    font-family: FontAwesome;
+    font-size: 26px;
+    color: #ffffff;
+    padding-top: 7px;
+}
+/* Preloader */
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/preloader.gif);
+}
+/* ========== Header top css start ========== */
+.irs-header-top-bar {
+    background: #091B27;
+    padding: 10px 0;
+}
+.irs-header-top-bar p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.irs-header-top-bar p i {
+    color: #ffffff;
+    margin-right: 5px;
+}
+.irs-social {
+    margin-top: 3px;
+}
+.irs-social a i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding-top: 7px;
+    margin-left: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-social a i:hover {
+    background: #ffffff;
+    color: #F13F4B;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ========== Header Nav css Start ========== */
+.scroll-to-fixed-fixed {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.75)
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.irs-header-nav {
+    padding: 10px 0;
+}
+.irs-main-logo img {
+    width: 135px;
+    height: auto;
+    margin-top: 20px;
+}
+.main_menu nav ul .active a {
+    color: #f13f4b;
+}
+.main_menu nav ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #535353;
+    padding: 0;
+    margin: 0 14px;
+    padding: 25px 0;
+}
+.main_menu nav ul li a:hover {
+    color: #f13f4b;
+}
+.main_menu nav ul li ul {
+    border-top: 3px solid #f13f4b;
+}
+.main_menu nav ul li ul li a {
+    margin: 0;
+}
+.irs-header-nav .irs-menu-btn {
+    font-weight: bold;
+    color: #ffffff;
+    background: #F13F4B;
+    padding: 15px 35px;
+    margin-top: 15px;
+    border: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+}
+
+
+
+/* ========== Main slider css Start ========== */
+.irs-main-slider {
+    position: relative;
+}
+.fade-carousel {
+    position: relative;
+    height: 80vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 80vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero-two {
+    text-align: left;
+}
+.hero h1 {
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 1px;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.hero h1 span {
+    font-size: 26px;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+   background-image: url(../images/slider/1.jpg);
+   position: relative; 
+}
+.fade-carousel .slides .slide-2 {
+   background-image: url(../images/slider/2.jpg);
+   position: relative; 
+}
+.fade-carousel .slides .slide-3 {
+   background-image: url(../images/slider/3.jpg);
+   position: relative; 
+}
+.fade-carousel .slides .slide-1:before, .fade-carousel .slides .slide-2:before,
+.fade-carousel .slides .slide-3:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.irs-main-slider .carousel-indicators li {
+    width: 30px;
+    height: 7px;
+    background-color: #ffffff;
+    border: none;
+    margin: 0;
+}
+.irs-main-slider .carousel-indicators .active {
+    background-color: #F13F4B;
+}
+.irs-main-slider .fade-carousel .carousel-indicators > li.active {
+    width: 30px;
+    height: 7px;
+    background-color: #F13F4B;
+    border: none;
+    margin: 0;
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+
+/* main-slider-two start */
+.irs-main-slider-two {
+    margin-top: -12px;
+}
+.main_menu_two nav ul li a {
+    color: #ffffff;
+}
+.main_menu_two nav ul li ul li a {
+    color: #535353;
+}
+.irs-header-nav-two {
+    padding-top: 0;
+}
+.irs-header-nav-two .irs-menu-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-header-nav-two .irs-menu-btn:hover {
+    background: #F13F4B;
+    border-color: #F13F4B;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ========== Help css Start ========== */
+.irs-help-field {
+    padding: 100px 0 70px;
+}
+.irs-help-field .irs-section-title {
+    margin-bottom: 90px;
+}
+.irs-help-box {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 40px 30px;
+}
+.irs-middle-box {
+    padding: 56px 30px;
+    margin-top: -30px;
+}
+.irs-middle-box .irs-btn-transparent i {
+    font-size: 14px;
+}
+.irs-help-box.bg1{
+    background: #F18C3F;
+}
+.irs-help-box.bg2{
+    background: #F13F4B;
+}
+.irs-help-box.bg3{
+    background: #F13FA4;
+}
+.irs-help-box i {
+    color: #ffffff;
+    font-size: 60px;
+}
+.irs-help-box h4 {
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.irs-help-box p {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.irs-col-padd-less {
+    padding: 0;
+}
+
+/******* Help two start ******/
+.irs-help-field-two {
+    padding: 100px 0 70px;
+}
+.irs-help-field-two .irs-help-col {
+    margin-bottom: 30px;
+    text-align: center;
+    background: #F6F6F6;
+    padding: 60px 30px 40px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-help-field-two .irs-help-col:hover {
+    background: #F13F4B;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+/* hexagon start */
+.irs-hexagon {
+  position: relative;
+  width: 70px; 
+  height: 40px;
+  background-color: #535353;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-help-field-two .irs-help-col:hover .irs-hexagon {
+    background: #ffffff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-hexagon:before,
+.irs-hexagon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+}
+.irs-hexagon:before {
+  bottom: 100%;
+  border-bottom: 20px solid #535353;
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 20px solid #535353;
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-help-field-two .irs-help-col:hover .irs-hexagon:before,
+.irs-help-field-two .irs-help-col:hover .irs-hexagon:after {
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-hexagon i {
+    color: #ffffff;
+    font-size: 38px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-help-field-two .irs-help-col:hover i {
+    color: #F13F4B;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-help-field-two .irs-help-col p {
+    margin-bottom: 25px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-help-field-two .irs-help-col h4 {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-help-field-two .irs-help-col:hover h4, .irs-help-field-two .irs-help-col:hover p {
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-help-field-two .irs-help-col:hover .irs-btn-transparent-three {
+    background: #ffffff;
+    color: #F13F4B;
+    border-color: #ffffff;
+}
+
+
+
+/* ========== Divider css Start ========== */
+.irs-divider-field {
+    padding: 100px 0 70px;
+    background: url(../images/bg/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.irs-divider-field .irs-divider-col {
+    margin-bottom: 30px;
+}
+.irs-divider-field .irs-divider-col h5 {
+    color: #ffffff;
+    font-size: 18px;
+}
+.irs-divider-field .irs-divider-col h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.irs-divider-field .irs-divider-col p {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.irs-pricing-range-two {
+    margin-top: 30px;
+}
+.irs-pricing-range-two label {
+    color: #ffffff;
+}
+.irs-pricing-range-two input {
+    color: #ffffff !important;
+}
+.irs-double-button {
+    position: relative;
+    display: inline-block;
+}
+.irs-double-button h6 {
+    font-size: 14px;
+    color: #f13f4b;
+    line-height: 40px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.irs-btn-donate {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 40px 10px 20px;
+    background: #F18C3F;
+    border: none;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-btn-donate:hover {
+    color: #ffffff;
+    background: #e07d31;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-btn-join {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px 10px 40px;
+    background: #F13FA4;
+    margin-left: -3px;
+    border: none;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-btn-join:hover {
+    color: #ffffff;
+    background: #dc3694;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-divider-field .irs-vertical-text p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+.irs-ends-date {
+    margin-top: 60px;
+}
+.irs-ends-date-two {
+    margin-top: 0;
+}
+.irs-ends-date li {
+    color: #ffffff;
+    float: left;
+}
+.irs-time-sircle {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.irs-time-sircle .start-count {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.irs-time-sircle h3 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.irs-time-dot {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+/* ========== Campaign css Start ========== */
+.irs-campaign-field {
+    padding: 100px 0 70px;
+}
+.irs-campaign-col {
+    text-align: center;
+    margin-bottom: 30px;
+    background: #F6F6F6;
+    overflow: hidden;
+}
+.irs-campaign-img {
+    position: relative;
+    overflow: hidden;
+}
+.irs-campaign-img-two {
+    float: left;
+    width: 33%;
+}
+.irs-campaign-img img {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-campaign-col:hover .irs-campaign-img img {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari */
+    transform: scale(1.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-urgent {
+    position: absolute;
+    top: 30px;
+    right: -105px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-campaign-col:hover .irs-urgent {
+    right: -2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-urgent p a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+    background: #F13F4B;
+    padding: 10px 25px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.irs-campaign-img-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 5px 60px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-campaign-col:hover .irs-campaign-img-text {
+    background: rgba(241, 63, 75, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-campaign-img-text ul li {
+    float: left;
+}
+.irs-campaign-img-text ul li p {
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.irs-campaign-img-text ul li p i {
+    margin-right: 5px;
+}
+.irs-campaign-content {
+    padding: 30px 30px 40px 30px;
+}
+.irs-campaign-content-two {
+    float: left;
+    text-align: left;
+    width: 67%;
+}
+.irs-campaign-content-two .irs-pricing-range label {
+    margin-left: 0;
+}
+.irs-campaign-content h4 {
+    font-size: 18px;
+    color: #707070;
+    text-transform: capitalize;
+}
+.irs-campaign-content p {
+    margin-bottom: 30px;
+}
+.irs-pricing-range {
+    margin-bottom: 30px;
+}
+.irs-pricing-range .ui-widget-header {
+    background: #F13F4B;
+}
+.irs-pricing-range .ui-widget.ui-widget-content {
+    border: none;
+    background: #C1C1C1;
+    border-radius: 0;
+}
+.irs-pricing-range .ui-state-default, .irs-pricing-range .ui-widget-content .ui-state-default, 
+.irs-pricing-range .ui-widget-header .ui-state-default, 
+.irs-pricing-range .ui-button, 
+.irs-pricing-range html .irs-pricing-range .ui-button.ui-state-disabled:hover, 
+.irs-pricing-range html .irs-pricing-range .ui-button.ui-state-disabled:active {
+    background: #ffffff;
+    border: 5px solid #F13F4B;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; 
+}
+.irs-pricing-range label {
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+.irs-pricing-range input {
+    background: transparent;
+    color: #6c6c6c;
+    border: none;
+    box-shadow: none;
+    width: 100px;
+}
+
+
+/* ========== Campaign Single css Start ========== */
+.irs-campaign-single {
+    padding: 100px 0 70px;
+}
+.irs-single-col {
+    margin-bottom: 30px;
+}
+.irs-single-banner {
+    position: relative;
+}
+.irs-reaming-date {
+    padding: 20px 80px;
+    background: #F13F4B;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    margin-left: -30%;
+}
+.irs-reaming-date ul li {
+    float: left;
+}
+.irs-reaming-date ul li p {
+    color: #ffffff;
+}
+.irs-reaming-date ul li p i {
+    margin-right: 5px;
+}
+.irs-pricing-range-single {
+    margin-top: 100px;
+}
+.irs-pricing-range-single label {
+    margin-left: 0;
+}
+.irs-single-btn {
+    margin-bottom: 30px;
+}
+.irs-single-btn h4 {
+    color: #707070;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.irs-single-list {
+    padding: 30px 0 30px 60px;
+}
+.irs-single-social i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #F13F4B;
+    line-height: 30px;
+    border: 1px solid #F13F4B;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.irs-single-social i:hover {
+    color: #ffffff;
+    background: #F13F4B;
+}
+.irs-people-comment {
+    margin-top: 50px;
+}
+.irs-people-comment-item {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 40px;
+}
+.irs-people-comment-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+}
+.irs-people-comment-left {
+    margin-left: 80px;
+}
+.irs-live-comment {
+
+}
+.irs-live-comment .form-control {
+    background: transparent;
+    border: 1px solid #C1C1C1;
+    border-radius: 0;
+    height: 40px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    box-shadow: none;
+}
+.irs-textarea {
+    height: 100% !important;
+}
+
+
+/* ========== Counter css Start ========== */
+.irs-counter-field {
+    padding: 100px 0 50px;
+    background: url(../images/bg/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.irs-counter-col {
+    margin-bottom: 50px;
+}
+.irs-counter-col .irs-funfact {
+    position: relative;
+    padding-left: 120px;
+}
+.irs-counter-col .irs-funfact i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 100px;
+    color: #ffffff;
+    line-height: 60px;
+    font-weight: normal;
+}
+.irs-counter-col .irs-funfact .start-count {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    float: left;
+}
+.irs-counter-col .irs-funfact span {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    float: left;
+}
+.irs-counter-col .irs-funfact h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+/* ========== Event css Start ========== */
+.irs-event-field {
+    padding: 100px 0 60px;
+}
+.irs-event-field .nav-tabs{
+    border-bottom: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.irs-event-field .nav-tabs > li {
+    float: none;
+    display: inline-block;
+}
+.irs-event-field .nav-tabs>li>a {
+    border-radius: 0;
+    padding: 20px 50px;
+    border: none;
+}
+.irs-event-field .nav-tabs>li>a:hover {
+    border: none;
+    background: #F13F4B;
+    color: #ffffff;
+}
+.irs-event-field .nav-tabs>li.active>a, 
+.irs-event-field .nav-tabs>li.active>a:focus, 
+.irs-event-field .nav-tabs>li.active>a:hover {
+    border: none;
+    background: #F13F4B;
+    color: #ffffff;
+}
+.irs-event-item {
+    background: #F6F6F6;
+    padding: 20px 20px 20px 195px;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+.irs-event-item .irs-event-img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 169px;
+}
+.irs-round-date {
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    text-align: center;
+    border: 2px solid #6B6B6B;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-event-item:hover .irs-round-date {
+    border-color: #F13F4B;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-round-date h6 {
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.irs-event-content h4 {
+    color: #707070;
+    font-size: 18px;
+    border-bottom: 1px solid #C1C1C1;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-event-item:hover .irs-event-content h4 {
+    border-color: #F13F4B;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-event-content ul {
+    margin-bottom: 10px;
+}
+.irs-event-content ul li {
+    float: left;
+    margin-right: 30px;
+}
+.irs-event-content ul li i {
+    margin-right: 5px;
+}
+.irs-event-item .irs-corner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid #535353;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-event-item:hover .irs-corner {
+    border-right-color: #F13F4B;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ========== Events Single css Start ========== */
+.irs-events-single-field {
+    padding: 100px 0 70px;
+}
+.irs-side-bar {
+    margin-bottom: 30px;
+}
+.irs-events-info {
+    position: relative;
+    margin-top: 40px;
+    padding-left: 80px;
+    float: left;
+    width: 60%;
+}
+.irs-date-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding-top: 8px;
+    border: 2px solid #F13F4B;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.irs-date-box h6 {
+    margin: 0;
+}
+.irs-events-info h4 {
+    color: #707070;
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #F13F4B;
+}
+.irs-events-info p i {
+    margin-right: 5px;
+}
+.irs-events-info p span {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.irs-event-join-btn {
+    float: right;
+    width: 40%;
+    padding-top: 40px;
+}
+.irs-event-discribe {
+    margin-top: 50px;
+}
+.irs-event-discribe h4 {
+    color: #5b5b5b;
+    font-weight: 400;
+    border-bottom: 1px solid #C1C1C1;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.irs-single-comment {
+    padding: 60px 80px;
+}
+.irs-single-comment p {
+    position: relative;
+}
+.irs-single-comment p i {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    font-size: 28px;
+    color: #F13F4B;
+}
+.irs-event-perticipants {
+    margin-top: 50px;
+}
+.irs-event-perticipants h4 {
+    color: #5b5b5b;
+    font-weight: 400;
+    border-bottom: 1px solid #C1C1C1;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.irs-event-perticipants-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.irs-event-perticipants-item h5 {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-weight: 400;
+}
+.irs-event-perticipants-item p {
+    font-size: 12px;
+}
+/* Side bar css start */
+.irs-search-box, .irs-categories-box, 
+.irs-posts-box, .irs-tag-box, .irs-instagram-box {
+    margin-bottom: 50px;
+}
+.irs-side-bar-title {
+    font-size: 18px;
+    color: #5b5b5b;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #C1C1C1;
+    display: inline-block;
+}
+.irs-search-box .form-control {
+    height: 35px;
+    border-radius: 0;
+    box-shadow: none;
+}
+.irs-search-box  .btn {
+    height: 35px;
+    border: 1px solid #F13F4B;
+    border-radius: 0;
+    padding: 8px 16px;
+    color: #ffffff;
+    background: #F13F4B;
+}
+.irs-categories-box ul li:before {
+    content: '\f2fb';
+    font-family: 'Material-Design-Iconic-Font';
+    margin-right: 10px;
+}
+.irs-categories-box ul li {
+    border-bottom: 1px solid #C1C1C1;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.irs-categories-box ul li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.irs-posts-box ul li:before {
+    content: '\f26f';
+    font-family: 'Material-Design-Iconic-Font';
+    margin-right: 10px;
+}
+.irs-tag-box ul li {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.irs-tag-box ul li a {
+    padding: 8px 12px;
+    border: 1px solid #C1C1C1;
+    background: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-tag-box ul li a:hover {
+    background: #F13F4B;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-instagram-box ul li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.irs-instagram-box ul li img {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+/* ========== Testimonial css Start ========== */
+.irs-testimonial-field {
+    padding: 90px 0 100px;
+    background: url(../images/bg/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.irs-transparent-space {
+    height: 50px;
+    width: 100%;
+    background: transparent;
+}
+.irs-testimonial-single {
+    background: #ffffff;
+    padding: 60px 40px 30px;
+    text-align: center;
+    position: relative;
+}
+.irs-testimonial-single .irs-comment-icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #646464;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg); /* Standard syntax */
+}
+.irs-testimonial-single .irs-comment-icon i {
+    font-size: 30px;
+    line-height: 50px;
+    color: #f13f4b;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg); /* Standard syntax */
+}
+.irs-testimonial-single p {
+    margin-bottom: 20px;
+}
+.irs-testimonial-single h4 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    color: #535353;
+    font-weight: 400;
+}
+.irs-testimonial-single h5 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.irs-testimonial-field .owl-theme .owl-nav {
+    margin-top: 30px;
+}
+.irs-testimonial-field .owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid transparent;
+    margin: 0 10px 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg); /* Standard syntax */
+}
+.irs-testimonial-field .owl-theme .owl-dots .owl-dot.active span, 
+.irs-testimonial-field .owl-theme .owl-dots .owl-dot:hover span {
+    border: 2px solid #F13F4B;
+    background: #ffffff;
+}
+
+
+/* ========== Volunteers css Start ========== */
+.irs-volunteers-field {
+    padding: 100px 0 70px;
+}
+.irs-volunteer-col {
+    margin-bottom: 70px;
+    position: relative;
+}
+.irs-volunteer-col .irs-volunteer-name {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    bottom: -38px;
+    margin-left: -45%;
+    width: 90%;
+    text-align: center;
+    background: #535353;
+    padding: 15px 25px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.irs-volunteer-col:hover .irs-volunteer-name {
+    bottom: -25px;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.irs-volunteer-col .irs-volunteer-name h4 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.irs-volunteer-col .irs-volunteer-name p {
+    font-size: 14px;
+    color: #ffffff;
+}
+.irs-volunteer-col .irs-volunteer-name-two {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    margin-left: -45%;
+    width: 90%;
+    text-align: center;
+    background: #F13F4B;
+    padding: 15px 25px 20px;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.irs-volunteer-col:hover .irs-volunteer-name-two {
+    opacity: 1;
+    bottom: -38px;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.irs-volunteer-col .irs-volunteer-name-two h4 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.irs-volunteer-col .irs-volunteer-name-two h4 a {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.irs-volunteer-col .irs-volunteer-name-two p {
+    font-size: 14px;
+    color: #ffffff;
+}
+.irs-volunteer-col .irs-volunteer-name-two 
+.irs-volunteer-social {
+    margin-top: 10px;
+}
+.irs-volunteer-col .irs-volunteer-name-two 
+.irs-volunteer-social a i {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-right: 5px;
+    margin-left: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.irs-volunteers-field-two {
+    padding-top: 0;
+}
+
+/* ========== Volunteers two css Start ========== */
+.irs-singup-field {
+    padding: 100px 0;
+    background: #f6f6f6;
+    text-align: center;
+}
+.irs-singup-field h2 {
+    margin-bottom: 60px;
+    font-size: 36px;
+}
+.irs-singup-col .form-control {
+    background: transparent;
+    border: 1px solid #C1C1C1;
+    border-radius: 0;
+    height: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+.irs-singup-field .irs-big-btn {
+    margin-top: 30px;
+}
+
+/* pagination start */
+.irs-pagination {
+
+}
+.irs-pagination .pagination>li>a, 
+.irs-pagination .pagination>li>span {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 4px 18px;
+    color: #666666;
+    background: #ffffff;
+    border: 1px solid #DCD9D9;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.irs-pagination .pagination>li>a:hover {
+    color: #ffffff;
+    background: #F13F4B;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+/* ========== Gallery css Start ========== */
+.irs-gallery-field {
+
+}
+.irs-img-hover {
+    position: relative;
+}
+.irs-layer:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-img-hover:hover .irs-layer:before {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-img-hover i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 48px;
+    color: #ffffff;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-img-hover:hover i {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Gallery two start */
+.irs-gallery-field-two {
+    padding: 100px 0;
+}
+.irs-gallery-field-two ul {
+    margin-bottom: 20px;
+}
+.irs-gallery-field-two ul li {
+    margin-bottom: 30px;
+}
+.irs-gallery-field-two ul li a {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #C1C1C1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-gallery-field-two ul li a:hover {
+    border-color: #F13F4B;
+    color: #ffffff;
+    background-color: #F13F4B;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.masonry-gallery .isotope-item {
+    width: 25%;
+}
+.masonry-gallery .isotope-item {
+    width: 33.33%;
+}
+.masonry-gallery .isotope-item {
+    overflow: hidden;
+}
+
+
+/* ========== Blog css Start ========== */
+.irs-blog-field {
+    padding: 100px 0 70px;
+}
+.irs-blog-col {
+    margin-bottom: 30px;
+}
+.irs-blog-col .irs-campaign-content p {
+    margin-bottom: 20px;
+}
+.irs-blog-field .irs-campaign-img-text ul li {
+    margin-right: 35px; 
+}
+.irs-blog-field .irs-campaign-img-text ul li:last-child {
+    margin-right: 0;
+}
+.irs-blog-field .irs-campaign-img-text ul li p a {
+    color: #ffffff;
+}
+
+/* ========== Blog-Single css Start ========== */
+.irs-blog-single {
+    padding: 100px 0 70px;
+}
+.irs-single-title {
+    margin-bottom: 30px;
+}
+.irs-single-title h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    color: #535353;
+}
+.irs-single-title ul li {
+    float: left;
+    margin-right: 30px;
+}
+.irs-single-title ul li i {
+    margin-right: 5px;
+}
+
+
+/* ========== Inner-page-heading css Start ========== */
+.irs-inner-page-heading {
+    padding: 190px 0;
+    text-align: center;
+    background: url(../images/bg/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.irs-inner-page-heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.irs-inner-page-heading p {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.irs-inner-page-heading p a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+.irs-inner-page-heading p a:hover {
+    color: #F13F4B;
+}
+
+
+/* ========== About css Start ========== */
+.irs-about-field {
+    padding: 100px 0 70px;
+}
+.irs-about-field .irs-about-col {
+    margin-bottom: 30px;
+}
+.irs-about-field .irs-about-col h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.irs-about-field .irs-about-col p {
+    margin-bottom: 20px;
+}
+.irs-about-field .irs-about-col ul li {
+    margin-bottom: 10px;
+}
+.irs-about-field .irs-about-col ul li i {
+    color: #C1C1C1;
+    margin-right: 10px;
+}
+.irs-about-field .irs-about-col .irs-big-btn {
+    margin-top: 20px;
+}
+
+/* ========== Mission css Start ========== */ 
+.irs-mission-field {
+    padding: 100px 0 70px;
+    background: #F6F6F6;
+}
+.irs-left-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 90px;
+}
+.irs-hexagon-two {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 70px;
+    height: 40px;
+    background-color: #535353;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-left-item:hover .irs-hexagon-two {
+    background-color: #F13F4B;
+}
+.irs-hexagon-two:before,
+.irs-hexagon-two:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+}
+.irs-hexagon-two:before {
+  bottom: 100%;
+  border-bottom: 20px solid #535353;
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-left-item:hover .irs-hexagon-two:before {
+    border-bottom-color: #F13F4B;
+}
+.irs-hexagon-two:after {
+  top: 100%;
+  width: 0;
+  border-top: 20px solid #535353;
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-left-item:hover .irs-hexagon-two:after {
+    border-top-color: #F13F4B;
+}
+.irs-hexagon-two i {
+    color: #ffffff;
+    font-size: 38px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.irs-mission-col h4 {
+    font-size: 18px;
+}
+.irs-right-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-right: 90px;
+    text-align: right;
+}
+.irs-right-item .irs-hexagon-two {
+    position: absolute;
+    left: 290px;
+    top: 20px;
+}
+.irs-right-item:hover .irs-hexagon-two {
+    background-color: #F13F4B;
+}
+.irs-right-item:hover .irs-hexagon-two:before {
+    border-bottom-color: #F13F4B;
+} 
+.irs-right-item:hover .irs-hexagon-two:after {
+    border-top-color: #F13F4B;
+}
+
+
+/* ========== Sponsor css Start ========== */
+.irs-sponsor-field {
+    padding: 100px 0 100px;
+}
+.irs-sponsor-col {
+    margin-bottom: 30px;
+}
+.irs-sponsor-col ul {
+    border: 1px solid #DCD9D9;
+}
+.irs-sponsor-col ul li {
+    float: left;
+    border-right: 1px solid #DCD9D9;
+    padding: 40px 38px;
+}
+.irs-sponsor-col ul li:last-child {
+    border: none;
+}
+.irs-sponsor-col ul li a img {
+    width: 150px;
+    height: 30px;
+}
+
+
+
+
+/* ========== Profile css Start ========== */
+.irs-profile-field {
+    padding: 100px 0 70px;
+
+}
+.irs-profile-col {
+    margin-bottom: 30px;
+}
+.irs-profile-col h4 {
+    font-family: 'Oxygen', sans-serif;
+    color: #474747;
+    font-size: 18px;
+}
+.irs-profile-col h5 {
+    font-family: 'Oxygen', sans-serif;
+    color: #474747;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.irs-profile-details {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.irs-profile-details ul li {
+    margin-bottom: 15px;
+}
+.irs-profile-details ul li h6 {
+    width: 160px;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    margin-bottom: 0;
+}
+.irs-profile-details ul li p {
+    float: left;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+/* ========== Donator form css start ========== */
+.irs-donator-field {
+    padding: 100px 0 70px;
+}
+.irs-donator-col {
+    margin-bottom: 30px;
+}
+.irs-donator-col h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.irs-donator-col .form-control {
+    height: 35px;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 0;
+    color: #666666;
+    margin-bottom: 40px;
+}
+.irs-donator-col h5 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.irs-donator-col .irs-pricing-range {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.irs-donator-col .irs-checkbox {
+    margin-top: 20px;
+}
+.irs-donator-col .irs-big-btn {
+    margin-top: 30px;
+}
+
+/* ========== Faq css start ========== */
+.irs-faq-field {
+    padding: 100px 0 70px;
+}
+.irs-faq-field .irs-volunteer-col {
+    margin-bottom: 50px;
+}
+.irs-volunteer-content p {
+    margin-bottom: 20px;
+}
+/*Accordion two start*/
+.irs-accordion-two .panel .panel-title a i {
+    background-color: transparent;
+    color: #535353;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-right: 1px solid #dddddd;
+    
+}
+.irs-accordion-two .panel .panel-title a .icon-1 {
+    display: inline-block;
+}
+.irs-accordion-two .panel-title a.collapsed .icon-1 {
+    display: none;
+}
+.irs-accordion-two .panel .panel-title a .icon-2 {
+    display: none;
+}
+.irs-accordion-two .panel .panel-title a.collapsed .icon-2 {
+    display: inline-block;
+}
+.irs-accordion-two .panel-title a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    color: #535353;
+    font-weight: 400;
+}
+.irs-accordion-two .panel-group .panel {
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+.irs-accordion-two .panel-default>.panel-heading {
+    background-color: transparent;
+    border-color: #EEEEEE;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+
+/* ========== Contact css start ========== */
+.irs-contact-field {
+    padding: 100px 0 70px;
+}
+.irs-contact-field .irs-contact-col {
+    margin-bottom: 30px;
+}
+.irs-address-box {
+    background: #F6F6F6;
+    text-align: center;
+    height: 145px;
+    padding: 65px 80px 30px 80px;
+    margin-bottom: 80px;
+}
+.irs-hexagon-three {
+    margin-bottom: 0;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -35px;
+}
+.irs-address-box:hover .irs-hexagon-three {
+    background-color: #F13F4B;
+}
+.irs-address-box:hover .irs-hexagon-three:before {
+    border-bottom-color: #F13F4B;
+}
+.irs-address-box:hover .irs-hexagon-three:after {
+    border-top-color: #F13F4B;
+}
+.irs-hexagon-three i {
+    font-size: 25px;
+    line-height: 40px;
+}
+.irs-contact-col .form-control {
+    background: transparent;
+    border: 1px solid #C1C1C1;
+    border-radius: 0;
+    height: 40px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    box-shadow: none;
+}
+.irs-contact-field .irs-contact-col h4 {
+    font-size: 18px;
+    color: #464646;
+    margin-bottom: 20px;
+}
+
+
+
+/* ========== Footer css Start ========== */
+.irs-footer-field {
+    padding: 100px 0 70px;
+    background: #282828;
+    position: relative;
+}
+.irs-footer-about, .irs-footer-link, 
+.irs-footer-news, .irs-footer-contact {
+    margin-bottom: 30px;
+}
+.irs-foooter-logo {
+    width: 135px;
+    height: 35px;
+}
+.irs-footer-about p {
+    color: #ffffff;
+    margin: 20px 0 30px;
+}
+.irs-footer-heading {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.irs-footer-link ul li{
+    margin-bottom: 5px;
+}
+.irs-footer-link ul li:before {
+    content: "\eb27";
+    font-family: IcoFont;
+    color: #ffffff;
+    margin-right: 5px;
+}
+.irs-footer-link ul li a {
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-footer-link ul li a:hover {
+    color: #999999;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.irs-news-box {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 25px;
+}
+.irs-news-box img {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.irs-news-box h5 {
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.irs-news-box p {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+}
+.irs-mailbox {
+    position: relative;
+    padding-left: 20px;
+}
+.irs-mailbox i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+}
+.irs-mailbox p {
+    color: #ffffff;
+    line-height: 14px;
+}
+.irs-footer-contact h6 {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+.irs-sub-field .input-group .form-control {
+    background: transparent;
+    border: 1px solid #ffffff; 
+}
+.irs-sub-field .input-group .form-control {
+    border-radius: 0;
+}
+.irs-sub-field .input-group .form-control:focus {
+    box-shadow: none;
+    color: #999999;
+}
+.irs-sub-field .input-group-btn>.btn {
+    background: #ffffff;
+    border-radius: 0;
+}
+.irs-sub-field .input-group-btn>.btn i {
+    font-size: 18px;
+    color: #F13F4B;
+}
+
+/* Copyright field start */
+.irs-copyright-field {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+.irs-copyright-field p {
+    color: #535353;
+    text-transform: capitalize;
+}
+.irs-copyright-field p a {
+    color: #F13F4B;
+}

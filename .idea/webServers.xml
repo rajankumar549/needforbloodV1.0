@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7528bcb7-fe6e-4ccc-9251-f63a43ef286f" name="NeedForblood" url="http://35.167.255.90">
+        <fileTransfer host="35.167.255.90" port="22" privateKey="C:\Users\Rajan Kumar\Downloads\needsforblood.pem" rootFolder="/var/www/html/dev/" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

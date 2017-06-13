@@ -1,0 +1,213 @@
+@media only screen and (max-width:1199px) {
+	.hero-two {
+		padding-left: ;
+	}
+}
+@media only screen and (max-width:1199px) {
+	.navbar-brand {
+		padding: 15px 0;
+	}
+	.main_menu nav ul li a {
+		margin: 0 10px;
+	}
+	.irs-header-top-bar p {
+		font-size: 11px;
+	}
+	.irs-social a i {
+		margin-left: 8px;
+	}
+	.irs-header-nav .irs-menu-btn {
+		padding: 12px 15px;
+		margin-top: 0;
+	}
+	.irs-menu-btn {
+		margin-top: 0 !important;
+	}
+	.irs-ends-date {
+		margin-top: 20px;
+	}
+	.irs-time-sircle {
+		margin-bottom: 10px;
+	}
+	.irs-campaign-img-text {
+		padding: 5px 15px;
+	}
+	.irs-campaign-content h4 {
+		font-size: 16px;
+	}
+	.irs-event-item .irs-event-img img {
+		width: 130px;
+		height: auto;
+	}
+	.irs-event-item {
+		padding: 20px 20px 20px 148px;
+	}
+	.irs-event-content h4 {
+		font-size: 16px;
+	}
+	.irs-volunteer-col .irs-volunteer-name-two .irs-volunteer-social a i {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.irs-right-item .irs-hexagon-two {
+		left: 230px;
+	}
+	.irs-sponsor-col ul li {
+		padding: 40px 18px;
+	}
+	.irs-campaign-img-two {
+		width: 45%;
+	}
+	.irs-campaign-content-two {
+		width: 55%;
+	}
+}
+@media only screen and (max-width:991px){
+	.irs-center-1 {
+		float: none;
+		text-align: center;
+	}
+	.irs-main-logo {
+		position: absolute;
+		z-index: 9999999;
+	}
+	.irs-main-logo img {
+		margin-top: 0;
+	}
+	.mean-container .mean-bar {
+		top: 30px;
+	}
+	.mean-container a.meanmenu-reveal {
+		top: -32px;
+	}
+	.irs-header-nav .irs-menu-btn {
+		padding: 15px 35px;
+		margin-top: 0;
+		position: absolute;
+		left: 50%;
+		top: -5px;
+		margin-left: -55px;
+		z-index: 99999999;
+	}
+	.irs-event-item {
+		padding: 20px 20px 20px 200px;
+	}
+	.irs-event-item .irs-event-img img {
+		width: 180px;
+		height: 168px;
+	}
+	.irs-right-item .irs-hexagon-two {
+	    left: 650px;
+	}
+	.irs-sponsor-col ul li {
+	    padding: 30px 42px;
+	    border: none;
+	}
+	.irs-inner-page-heading {
+		padding: 80px 0;
+	}
+	.irs-campaign-img-two {
+		width: 50%;
+	}
+	.irs-campaign-content-two {
+		width: 50%;
+	}
+
+}
+@media only screen and (max-width:767px) {
+	.irs-center-2 {
+		text-align: center;
+		float: none;
+	}
+	.irs-help-field {
+		padding: 100px 0;
+	}
+	.irs-middle-box {
+		margin: 0;
+	}
+	.irs-help-box {
+		margin-bottom: -1px;
+	}
+	.masonry-gallery .isotope-item {
+		width: 50%;
+	}
+	.irs-left-item {
+		text-align: center;
+		padding-left: 0;
+	}
+	.irs-hexagon-two {
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.irs-right-item {
+		text-align: center;
+		padding-right: 0;
+	}
+	.irs-right-item .irs-hexagon-two {
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		left: 0;
+	}
+	.irs-campaign-img-two {
+		width: 100%;
+	}
+	.irs-campaign-content-two {
+		width: 100%;
+	}
+	.fade-carousel {
+	    height: 65vh;
+	}
+	.fade-carousel .carousel-inner .item {
+		height: 65vh;
+	}
+
+
+}
+@media only screen and (max-width:685px){
+	.irs-event-field .nav-tabs > li {
+		margin-bottom: 5px;
+	}
+	.irs-reaming-date {
+		padding: 20px;
+	}
+}
+@media only screen and (max-width:500px) {
+	.irs-header-nav .irs-menu-btn {
+		display: none;
+	}
+	.irs-sponsor-col ul li a img {
+		width: 130px;
+		height: auto;
+	}
+}
+@media only screen and (max-width:480px) {
+	.irs-counter-col .irs-funfact {
+		padding-left: 50px;
+	}
+	.irs-counter-col .irs-funfact i {
+		font-size: 36px;
+	}
+	.irs-reaming-date {
+		padding: 10px;
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+	}
+	.irs-reaming-date p {
+		font-size: 12px;
+	}
+
+}
+@media only screen and (max-width:450px) {
+	.irs-sponsor-col ul li a img {
+	    width: 110px;
+	    height: auto;
+	}
+}
+@media only screen and (max-width:350px) {
+	.irs-people-comment-left {
+		margin-left: 0;
+	}
+}
